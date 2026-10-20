@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#285943">
+    <meta name="description" content="好好意语 A1 互动练习：C'È / CI SONO — 某个地方有……">
+    <title>C'È / CI SONO — 某个地方有……｜好好意语</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#main-content" aria-label="跳到好好意语练习内容">
+          <span class="brand-mark" aria-hidden="true">H</span>
+          <span>
+            <strong>好好意语</strong>
+            <small>HAOHAO ITALIANO</small>
+          </span>
+        </a>
+        <button class="restart-link" id="restart-top" type="button">Ricomincia</button>
+      </header>
+
+      <section class="exercise-card" id="main-content" aria-labelledby="exercise-title">
+        <section class="intro-view" id="intro-view" aria-labelledby="exercise-title">
+          <p class="eyebrow">A1 · GRAMMATICA</p>
+          <div class="title-block intro-title">
+            <p class="part-label">OSSERVA</p>
+            <h1 id="exercise-title">C'È / CI SONO</h1>
+            <p class="subtitle">某个地方有……</p>
+          </div>
+
+          <div class="instruction-block">
+            <h2>Osserva gli esempi.</h2>
+            <p>先观察下面的例句。</p>
+          </div>
+
+          <div class="example-list" aria-label="例句">
+            <p>Sul tavolo <strong>c'è</strong> un cellulare.</p>
+            <p>Sul tavolo <strong>ci sono</strong> due matite.</p>
+            <p>Io <strong>ho</strong> un gatto.</p>
+          </div>
+
+          <button class="primary-button" id="start-button" type="button">
+            Inizia
+            <span aria-hidden="true">→</span>
+          </button>
+        </section>
+
+        <div id="quiz-view" hidden>
+          <div class="eyebrow-row">
+            <p class="eyebrow">A1 · GRAMMATICA</p>
+            <p class="progress" id="progress" aria-live="polite">1 / 10</p>
+          </div>
+
+          <div class="progress-track" aria-hidden="true">
+            <span id="progress-bar"></span>
+          </div>
+
+          <div class="title-block">
+            <p class="part-label" id="part-label">PARTE 1</p>
+            <h1>C'È / CI SONO</h1>
+            <p class="subtitle">某个地方有……</p>
+          </div>
+
+          <div class="instruction-block">
+            <h2 id="instruction-it">C'è o ci sono?</h2>
+            <p id="instruction-zh">请选择正确答案。</p>
+          </div>
+
+          <section class="question-panel" aria-labelledby="question-text">
+            <p class="question-number" id="question-number">DOMANDA 1</p>
+            <h2 class="question-text" id="question-text">Sul tavolo ___ un cellulare.</h2>
+            <div class="options" id="options" role="group" aria-labelledby="question-text"></div>
+            <div class="double-options" id="double-options" hidden></div>
+            <div class="feedback" id="feedback" aria-live="assertive" hidden></div>
+            <button class="primary-button" id="continue-button" type="button" hidden>
+              Continua
+              <span aria-hidden="true">→</span>
+            </button>
+          </section>
+        </div>
+
+        <section class="part-summary" id="part-summary" aria-labelledby="summary-title" hidden>
+          <div class="celebration small" aria-hidden="true">✓</div>
+          <p class="eyebrow completion-eyebrow" id="summary-eyebrow">PARTE 1 COMPLETATA</p>
+          <h1 id="summary-title">Da ricordare</h1>
+          <div class="rule-box" id="summary-rules"></div>
+          <button class="primary-button" id="summary-continue" type="button">
+            Continua
+            <span aria-hidden="true">→</span>
+          </button>
+        </section>
+
+        <section class="completion" id="completion-view" aria-labelledby="completion-title" hidden>
+          <div class="celebration" aria-hidden="true">✓</div>
+          <p class="eyebrow completion-eyebrow">ESERCIZIO COMPLETATO</p>
+          <h1 id="completion-title">Bravissimo! Hai completato l'esercizio! 🎉</h1>
+
+          <div class="remember-grid">
+            <section class="remember-card">
+              <p class="remember-label">C'È — 单数</p>
+              <p class="italian-example">Sul tavolo c'è una penna.</p>
+              <p class="chinese-example">桌子上有一支笔。</p>
+            </section>
+            <section class="remember-card">
+              <p class="remember-label">CI SONO — 复数</p>
+              <p class="italian-example">Sul tavolo ci sono tre libri.</p>
+              <p class="chinese-example">桌子上有三本书。</p>
+            </section>
+            <section class="remember-card">
+              <p class="remember-label">AVERE — 拥有</p>
+              <p class="italian-example">Io ho un gatto.</p>
+              <p class="chinese-example">我有一只猫。</p>
+            </section>
+          </div>
+
+          <div class="comparison-box">
+            <h2>Confronta｜对比一下</h2>
+            <div class="comparison-row">
+              <p class="italian-example">Io ho un gatto.</p>
+              <p class="chinese-example">我有一只猫。</p>
+            </div>
+            <div class="comparison-row">
+              <p class="italian-example">A casa mia c'è un gatto.</p>
+              <p class="chinese-example">我家里有一只猫。</p>
+            </div>
+          </div>
+
+          <button class="primary-button restart-button" id="restart-bottom" type="button">
+            Ricomincia
+            <span aria-hidden="true">↻</span>
+          </button>
+        </section>
+      </section>
+
+      <footer>好好意语 · Italiano passo dopo passo.</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
